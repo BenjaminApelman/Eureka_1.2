@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Padding inside the navbar */
+  }
+  
+  .nav-list {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox layout for the navbar items */
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Space between each navbar item */
+  }
+  
+  .nav-item a {
+    color: white; /* Text color for navbar links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 24px; /* Font size of navbar links */
+  }
+  
+  .nav-item a:hover {
+    color: #66c2ff; /* Change color on hover */
+  }
+  
