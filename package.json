@@ -15,7 +15,9 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
+    "react-split": "^2.0.14",
     "route": "^0.2.5",
+    "split.js": "^1.6.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
