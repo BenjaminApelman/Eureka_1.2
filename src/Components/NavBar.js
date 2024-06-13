@@ -9,15 +9,7 @@ function Navbar() {
         <li className="nav-item">
           <Link to="/problems">Problems</Link>
         </li>
-        <li className="nav-item">
-         <Link to="#nog"></Link>
-        </li>
-        <li className="nav-item">
-         <Link to=""></Link>
-        </li>
-        <li className="nav-item">
-          <Link to=""></Link>
-        </li>
+        
       </ul>
     </nav>
   );

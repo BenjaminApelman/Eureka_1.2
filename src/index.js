@@ -1,15 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Problems from './Pages/Problems';
-
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+
+//Components:
+import App from './App';
+
+//CSS:
+import Problems from './Pages/Problems';
+import SolveProblem  from './Pages/SolveProblem';
+//JSON:
+
+
 
 
 const router = createBrowserRouter([
   { path: "/",  element: <App /> },
   { path: "/problems",  element: <Problems /> },
-
+  { path: "/solveproblem", element: <SolveProblem/>}
 
 ]);
 
