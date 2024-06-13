@@ -21,10 +21,10 @@ export default function SolveProblem() {
         <div className="Problems-Div">
             <Navbar />
             <div className="Solve-Problem-Container">
-                <Split className="split" id="Horizontal-Split">
-                    <ProblemDescription name = {problemName}/>
-                    <CodeEditor />
-                </Split>
+            <Split className="split" id="Horizontal-Split">
+                <ProblemDescription name = {problemName}/>
+                <CodeEditor />
+            </Split>
             </div>
         </div>
     );

@@ -1,17 +1,20 @@
 // problemsData.js
 
-export const problems = [
-    {
-        name: "Problem 1",
-        startingCode: "// Starting code for Problem 1\nfunction solve() {\n    // Write your solution here\n}"
+export const problem_description_and_code = {
+    "Find Mean": {
+        startingCode: "",
+        description: "Write a function to calculate the mean of a list of numbers in Python.",
     },
-    {
-        name: "Problem 2",
-        startingCode: "// Starting code for Problem 2\nfunction solve() {\n    // Write your solution here\n}"
+    "Find RMSE": {
+        startingCode: "",
+        description: "Implement a function to compute the Root Mean Square Error (RMSE) in Python for two lists of numbers.",
     },
-    {
-        name: "Problem 3",
-        startingCode: "// Starting code for Problem 3\nfunction solve() {\n    // Write your solution here\n}"
+    "Producer-Consumer": {
+        startingCode: "",
+        description: "Implement the Producer-Consumer problem using threads in C programming language.",
     },
-    // Add more problems as needed
-];
+    "Dinning Philosophers": {
+        startingCode: "",
+        description: "Implement the Dining Philosophers problem using threads in C programming language.",
+    },
+};

@@ -9,7 +9,6 @@ function Navbar() {
         <li className="nav-item">
           <Link to="/problems">Problems</Link>
         </li>
-        
       </ul>
     </nav>
   );

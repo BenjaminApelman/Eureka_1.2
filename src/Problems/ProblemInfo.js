@@ -1,5 +1,5 @@
 
-export const problem_description = [
+export const problem_info = [
     {
         problem_name: "Find Mean",
         discipline: "Stats",

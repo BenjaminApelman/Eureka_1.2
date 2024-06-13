@@ -7,8 +7,7 @@ import React from 'react';
 import '../Components_CSS/ProblemTable.css';
 
 //JSON 
-import '../Problems/ProblemDescription'
-import { problem_description } from '../Problems/ProblemDescription';
+import { problem_info } from '../Problems/ProblemInfo';
 import { Link } from 'react-router-dom';
 
 
@@ -29,7 +28,7 @@ function ProblemTable() {
         </thead>
 
         <tbody>
-            {problem_description.map((problem) => 
+            {problem_info.map((problem) => 
                 <tr key={problem.problem_name}>
 
                     <td className='problem-name'> 

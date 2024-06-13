@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Box, flexbox, useStatStyles} from "@chakra-ui/react";
+import { flexbox } from "@chakra-ui/react";
 import { Editor } from "@monaco-editor/react";
 import Split from 'react-split'
 
@@ -15,7 +15,7 @@ import "../Components_CSS/CodeEditor.css"
 
 export const CodeEditor = () => {
 
-  const [code, setCode] = useState("for i in range(100):");
+  const [code, setCode] = useState("for i in range(10):");
   const [output, setOutput] = useState(null);
       
 
@@ -32,24 +32,10 @@ export const CodeEditor = () => {
 
   return (
     <div className="CodeEditor">
-      <Split
-          className="split"
-          direction="vertical"
-          id="Vertical-Split"
-      >
-        
+      <Split className="split" direction="vertical" id="Vertical-Split">
+
         {/* Begin upper half (IDE) */}
-        <div
-            className="editor-wrapper"
-            style={{
-              padding: "16px",
-              border: "5px solid #178D9F",
-              borderRadius: "12px",
-              width: "95%",
-              overflow: "auto",
-              display: flexbox
-            }}
-          >
+        <div className="editor-wrapper" style={{  padding: "16px",  border: "5px solid #178D9F",  borderRadius: "12px",   width: "95%",  overflow: "auto",  display: flexbox }}>
             <Editor
               height="100%"
               theme="vs-dark"
@@ -59,10 +45,6 @@ export const CodeEditor = () => {
             />
           </div>
           {/* End upper half (IDE) */}
-
-
-
-
 
           {/* Begin lower half (output) */}
           <div className="Output">
@@ -75,14 +57,8 @@ export const CodeEditor = () => {
             <div className="result-box">
               {output}
             </div>
-
-
-
           </div>
           {/* End lower half (output) */}
-
-
-
 
       </Split>
     </div>
