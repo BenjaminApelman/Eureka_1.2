@@ -1,27 +1,30 @@
 
 import { useLocation } from "react-router-dom";
 import Split from 'react-split'
-import '../Pages_CSS/SolveProblem.css'
 
 //Components
 import Navbar from "../Components/NavBar";
-import ProblemDescri from "../Components/ProblemDescription";
+import ProblemDescription from "../Components/ProblemDescription";
+import { CodeEditor } from "../Components/CodeEditor";
+
 //CSS
-import '../Pages_CSS/Problems.css'
+import "../Pages_CSS/SolveProblem.css"
 
 //JSON
 
 export default function SolveProblem() {
+  
     const location = useLocation();
-    const problemName = location.state.problemName
+    const problemName = location.state.problemName;
+
     return (
         <div className="Problems-Div">
             <Navbar />
-            <div>
-              <Split className="split">
-                  <ProblemDescri name = {problemName}/>
-                  <div>Code edditor</div>
-              </Split>
+            <div className="Solve-Problem-Container">
+                <Split className="split" id="Horizontal-Split">
+                    <ProblemDescription name = {problemName}/>
+                    <CodeEditor />
+                </Split>
             </div>
         </div>
     );
