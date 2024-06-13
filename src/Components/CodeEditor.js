@@ -11,13 +11,10 @@ import { executeCode } from "../API/monaco";
 import "../Components_CSS/CodeEditor.css"
 
 //JSON
+import { problem_description_and_code } from "../Problems/StartingCode";
 
 
-export const CodeEditor = () => {
-
-  const [code, setCode] = useState("for i in range(10):");
-  const [output, setOutput] = useState(null);
-      
+export const CodeEditor = ({problemName}) => {
 
   const runCode = async(language, userCode) => {
     try {
@@ -28,7 +25,16 @@ export const CodeEditor = () => {
     }
   }
 
-  const x = "python";
+
+      
+  const curr_language = problem_description_and_code[problemName].language; 
+
+  
+  var code_template =  problem_description_and_code[problemName].startingCode;
+
+  const [code, setCode] = useState(code_template);
+  const [output, setOutput] = useState(null);
+
 
   return (
     <div className="CodeEditor">
@@ -49,7 +55,7 @@ export const CodeEditor = () => {
           {/* Begin lower half (output) */}
           <div className="Output">
             <div className="center-button">
-              <button type="button" className="run-code-button" onClick={() => runCode(x,code)}>
+              <button type="button" className="run-code-button" onClick={() => runCode(curr_language, code)}>
                 Run Code
               </button>
             </div>

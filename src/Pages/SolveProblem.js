@@ -23,7 +23,7 @@ export default function SolveProblem() {
             <div className="Solve-Problem-Container">
             <Split className="split" id="Horizontal-Split">
                 <ProblemDescription name = {problemName}/>
-                <CodeEditor />
+                <CodeEditor problemName = {problemName} />
             </Split>
             </div>
         </div>
