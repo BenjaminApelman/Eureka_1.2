@@ -4,9 +4,8 @@ import Split from 'react-split'
 
 //Components
 import Navbar from "../Components/NavBar";
-import ProblemDescription from "../Components/ProblemDescription";
-import { CodeEditor } from "../Components/CodeEditor";
-
+import ProblemDescription from "../Components/Solve_Problem_Components/ProblemDescription";
+import { CodeEditor } from "../Components/Solve_Problem_Components/CodeEditor";
 //CSS
 import "../Pages_CSS/SolveProblem.css"
 
@@ -21,10 +20,10 @@ export default function SolveProblem() {
         <div className="Problems-Div">
             <Navbar />
             <div className="Solve-Problem-Container">
-            <Split className="split" id="Horizontal-Split">
-                <ProblemDescription name = {problemName}/>
-                <CodeEditor problemName = {problemName} />
-            </Split>
+                <Split className="split" id="Horizontal-Split">
+                    <ProblemDescription name = {problemName}/>
+                    <CodeEditor problemName = {problemName} />
+                </Split>
             </div>
         </div>
     );

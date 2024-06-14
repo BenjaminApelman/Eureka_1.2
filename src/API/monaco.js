@@ -9,10 +9,11 @@ export const executeCode = async (language, sourceCode) => {
     //May want to add an endpoint to dynmically update these
     const LANGUAGE_VERSIONS = {
         "python": "3.10.0",
+        "c": "10.2.0"
     };
         
     const version = LANGUAGE_VERSIONS[language]
-
+    
     const response = await API.post("/execute", {
         language: language,
         version: version,

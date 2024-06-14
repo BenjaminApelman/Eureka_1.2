@@ -1,4 +1,4 @@
-import { problem_description_and_code } from "../Problems/StartingCode";
+import { problem_description_and_code } from "../../Problems/StartingCode";
 
 
 export default function ProblemDescription({name}){
