@@ -53,7 +53,7 @@ export const CodeEditor = ({problemName}) => {
 
         </div>
 
-          <Output editorRef={editorRef} language={curr_language} />
+          <Output editorRef={editorRef} language={curr_language} problemName={problemName} />
 
       </Split>
     </div>
