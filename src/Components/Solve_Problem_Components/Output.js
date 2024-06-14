@@ -33,6 +33,6 @@ export default function Output({ editorRef, language }){
             <div className="result-box">
               {output}
             </div>
-          </div>
+        </div>
     );
 }

@@ -33,24 +33,25 @@ export const CodeEditor = ({problemName}) => {
       <Split className="split" direction="vertical" id="Vertical-Split">
 
         <div className="editor-wrapper" 
-            style={{ 
-            padding: "16px", 
-            border: "5px solid #178D9F",  
-            borderRadius: "12px",  
-            width: "95%",  
-            overflow: "auto", 
-            display: flexbox }}>
+          style={{ 
+          padding: "16px", 
+          border: "5px solid #178D9F",  
+          borderRadius: "12px",  
+          width: "95%",  
+          overflow: "auto", 
+          display: flexbox }}
+        >
 
-            <Editor
-              height="100%"
-              theme="vs-dark"
-              language = {problem_description_and_code[problemName].language}
-              value={code} //Here is where code is being set
-              onChange={(code) => setCode(code)} //Here is where code is being set
-              onMount={onMount}
-            />
+          <Editor
+            height="100%"
+            theme="vs-dark"
+            language = {problem_description_and_code[problemName].language}
+            value={code} //Here is where code is being set
+            onChange={(code) => setCode(code)} //Here is where code is being set
+            onMount={onMount}
+          />
 
-          </div>
+        </div>
 
           <Output editorRef={editorRef} language={curr_language} />
 

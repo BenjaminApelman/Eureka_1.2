@@ -3,7 +3,7 @@
 export const problem_description_and_code = {
 
 
-    
+
     "Find Mean": {
         startingCode: "arr = [1,2,3,4,5,6,7,8,9]",
         description: "Write a function to calculate the mean of a list of numbers in Python.",
@@ -24,7 +24,7 @@ export const problem_description_and_code = {
 
 
     "Producer-Consumer": {
-        "startingCode": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 10; i++) {\n        printf(\"i = %d\", i);\n    }\n    return 0;\n}",
+        startingCode: "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 10; i++) {\n        printf(\"i = %d\", i);\n    }\n    return 0;\n}",
         description: "Implement the Producer-Consumer problem using threads in C programming language.",
         language: "c"
 
@@ -34,8 +34,8 @@ export const problem_description_and_code = {
 
     
     "Dinning Philosophers": {
-        "startingCode": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 10; i++) {\n        printf(\"i = %d\", i);\n    }\n    return 0;\n}",
-        description: "Implement the Dining Philosophers problem using threads in C programming language.",
+        startingCode: "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 10; i++) {\n        printf(\"i = %d\", i);\n    }\n    return 0;\n}",
+        description: "A classic in Operating systems",
         language: "c"
     },
 };
