@@ -14,10 +14,14 @@ export const problem_description_and_code = {
 
 
     "Find RMSE": {
-        startingCode: "",
-        description: "Implement a function to compute the Root Mean Square Error (RMSE) in Python for two lists of numbers.",
-        language: "python"
+        "startingCode": "import numpy as np\n\nclass UserCode:\n    def calculate_rmse(self, data):\n",
+        "language": "python"
     },
+    
+    
+    
+    
+    
 
 
 

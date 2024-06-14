@@ -1,0 +1,17 @@
+  .container {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-start; /* Align items from the start */
+    align-items: center; /* Center items vertically */
+    gap: 15px; /* Gap between items */
+    padding: 10px;
+  }
+
+  .item {
+    padding: 10px;
+    background-color: #7a7a7a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: "Times New Roman", Times, serif;
+  }

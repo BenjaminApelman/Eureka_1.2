@@ -4,7 +4,7 @@ import { useState } from "react";
 //Components
 import { executeCode } from "../../API/monaco";
 //CSS
-
+import "./CSS/Output.css"
 //JSON
 import { test_cases } from "../../Problems/TestCases";
 import { class_template } from "../../Problems/ClassTemplate";
@@ -52,7 +52,7 @@ export default function Output({ editorRef, language, problemName }){
           setOutput("Passed!");
         }
         else{
-          setOutput("Failed.")
+          setOutput(result.stderr)
         }
       } 
       catch (error) {
@@ -76,8 +76,17 @@ export default function Output({ editorRef, language, problemName }){
             </div>
               
             <div className="result-box">
+              <div class="container">
+                <div class="item">Test 1</div>
+                <div class="item">Test 2</div>
+                <div class="item">Test 3</div>
+              </div>
+
               {output}
+
             </div>
+
+            
         </div>
     );
 }
