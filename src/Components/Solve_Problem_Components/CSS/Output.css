@@ -1,17 +1,59 @@
-  .container {
-    display: flex; /* Use flexbox layout */
-    justify-content: flex-start; /* Align items from the start */
-    align-items: center; /* Center items vertically */
-    gap: 15px; /* Gap between items */
-    padding: 10px;
-  }
+/* CSS/Output.css */
+.Output {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-  .item {
-    padding: 10px;
-    background-color: #7a7a7a;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    border-radius: 5px;
-    font-family: "Times New Roman", Times, serif;
-  }
+.center-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+
+.run-code-button:hover {
+  background-color: #45a049;
+}
+
+.result-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* This makes the result-box take up the remaining space */
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex; /* Use flexbox layout */
+  justify-content: flex-start; /* Align items from the start */
+  align-items: center; /* Center items vertically */
+  gap: 15px; /* Gap between items */
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.item {
+  padding: 10px;
+  background-color: #7a7a7a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background-color: #666;
+}
+
+.gray-box {
+  background-color: #d3d3d3; /* Light gray background */
+  padding: 20px; /* Padding inside the box */
+  border-radius: 5px; /* Rounded corners */
+  font-family: Arial, sans-serif; /* Font styling */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  margin: 10px 0; /* Margin to separate boxes */
+  flex: 1;
+  overflow: auto;
+}

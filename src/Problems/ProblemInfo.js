@@ -9,7 +9,7 @@ export const problem_info = [
     },
     {
         problem_name: "Find RMSE",
-        discipline: "Data-Sci",
+        discipline: "Data Science",
         language: "Python",
         difficulty: "Easy",
         solved: "-"

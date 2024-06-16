@@ -7,7 +7,7 @@ import Split from 'react-split'
 //Components
 import Output from "./Output";
 //CSS
-import "../../Components_CSS/CodeEditor.css"
+import "./CSS/CodeEditor.css"
 //JSON
 import { problem_description_and_code } from "../../Problems/StartingCode";
 
