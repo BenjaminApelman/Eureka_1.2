@@ -15,6 +15,14 @@ export const problem_info = [
         solved: "-"
     },
     {
+        problem_name: "Newton's Method",
+        discipline: "Numerical Computation",
+        language: "Python",
+        difficulty: "Medium",
+        solved: "-"
+    },
+
+    {
         problem_name: "Producer-Consumer",
         discipline: "Operating Systems",
         language: "C",
@@ -28,5 +36,13 @@ export const problem_info = [
         difficulty: "Medium",
         solved: "-"
     },
+    {
+        problem_name: "Riemann Approximation of an Integral",
+        discipline: "Numerical Computation",
+        language: "Python",
+        difficulty: "Easy",
+        solved: "-"
+    },
+    
    
 ];

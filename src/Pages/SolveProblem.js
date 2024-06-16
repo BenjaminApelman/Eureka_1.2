@@ -9,7 +9,7 @@ import { CodeEditor } from "../Components/Solve_Problem_Components/CodeEditor";
 //CSS
 import "../Pages_CSS/SolveProblem.css"
 
-//JSON
+//JSON 
 
 export default function SolveProblem() {
   
@@ -21,7 +21,10 @@ export default function SolveProblem() {
             <Navbar />
             <div className="Solve-Problem-Container">
                 <Split className="split" id="Horizontal-Split">
+
+                    
                     <ProblemDescription name = {problemName}/>
+                    
                     <CodeEditor problemName = {problemName} />
                 </Split>
             </div>

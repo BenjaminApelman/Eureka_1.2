@@ -1,9 +1,11 @@
 .gray-box {
     background-color: #d3d3d3; /* Light gray background */
+    padding: 10px; /* Padding inside the box */
     border: 1px solid #a9a9a9; /* Dark gray border */
     border-radius: 5px; /* Rounded corners */
     font-family: Arial, sans-serif; /* Font styling */
     font-size: 16px; /* Font size */
     color: #333; /* Text color */
     max-width: 600px; /* Maximum width of the box */
+    margin: 20px auto; /* Center the box horizontally */
   }

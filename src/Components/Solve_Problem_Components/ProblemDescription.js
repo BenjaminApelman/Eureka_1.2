@@ -8,7 +8,10 @@ export default function ProblemDescription({name}){
     return(
         <div>
             <h1>{name}</h1>
-            <h3>{problem_description}</h3>
+            <h3> 
+                {problem_description}
+            </h3>
+
         </div>
     );
 }

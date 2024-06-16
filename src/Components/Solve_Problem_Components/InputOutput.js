@@ -5,6 +5,5 @@ export default function InputOutput({text}){
         <div class="gray-box">
             {text}
         </div>
-
     );
 }
