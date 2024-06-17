@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, version } from "react";
 
 
 //Components
@@ -22,10 +22,10 @@ export default function Output({ editorRef, language, problemName }){
       let user_code = editorRef.current.getValue();
       user_code = GenerateTestCases(language, user_code, problemName);
 
-      console.log(">", user_code)
+
       const API_CALL =  await RunCode(language,user_code);
-      const pared_API_call = ParseAPI(API_CALL);
-      setOutput(pared_API_call);
+      const parsed_API_call = ParseAPI(API_CALL);
+      setOutput(parsed_API_call);
     }
 
     return(

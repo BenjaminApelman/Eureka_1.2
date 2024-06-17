@@ -22,7 +22,7 @@ export const problem_description_and_code = {
     },
     
     "Producer-Consumer": {
-        startingCode: "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 10; i++) {\n        printf(\"i = %d\", i);\n    }\n    return 0;\n}",
+        startingCode: "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <pthread.h>\n#include <unistd.h>\n#include <semaphore.h>\n#include \"array.h\"\n\n#define ARR_SIZE 10                       // max elements in arr\n\ntypedef struct {\n    \n} arr;\n\nint arr_init() {\n \n}\n\nint  arr_put (){\n\n}\n\nint arr_get() {\n    \n}",
         description: "Implement the Producer-Consumer problem using threads in C programming language.",
         language: "c"
     },
@@ -34,8 +34,16 @@ export const problem_description_and_code = {
     },
 
     "Riemann Approximation of an Integral": {
-        startingCode: "import math\nclass UserCode:\n    def riemann_sum(f, points):\n",
+        startingCode: "import math\nclass UserCode:\n    def riemann_sum(self, f, points):\n",
         description: "Find that integral babby",
         language: "python"
+    },
+
+    "Build a Vector": {
+        startingCode: "#include <stdexcept>\n\ntemplate <typename Type>\nclass Vector {\n    private:\n        Type* data;\n        size_t size;\n        size_t capacity;\n\n    public:\n        Vector() : data(nullptr), size(0), capacity(0) {}\n\n        void push_back(const Type& value) {\n            //TODO\n        }\n\n        Type pop_back() {\n            //TODO\n        }\n\n        int get_capacity() {\n            //TODO\n        }\n\n        int get_size() {\n            //TODO\n        }\n};",
+        description: "Build a vector, bro",
+        language: "cpp"
      }
+
+    
 };

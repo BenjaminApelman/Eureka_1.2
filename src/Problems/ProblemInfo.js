@@ -43,6 +43,14 @@ export const problem_info = [
         difficulty: "Easy",
         solved: "-"
     },
+    {
+        problem_name: "Build a Vector",
+        discipline: "Data Structures",
+        language: "C++",
+        difficulty: "Easy",
+        solved: "-"
+    },
+    
     
    
 ];
