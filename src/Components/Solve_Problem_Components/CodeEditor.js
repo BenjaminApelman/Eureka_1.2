@@ -34,13 +34,12 @@ export const CodeEditor = ({problemName}) => {
 
         <div className="editor-wrapper" 
           style={{ 
-          padding: "16px", 
-          border: "5px solid #178D9F",  
-          borderRadius: "12px",  
-          width: "95%",  
-          overflow: "auto", 
-          display: flexbox }}
-        >
+              padding: "16px", 
+              border: "5px solid #178D9F",  
+              borderRadius: "12px",  
+              overflow: "auto",  // Adjust overflow handling as needed
+              display: "flex"    // Use "flex" instead of "flexbox"
+          }}>
 
           <Editor
             height="100%"

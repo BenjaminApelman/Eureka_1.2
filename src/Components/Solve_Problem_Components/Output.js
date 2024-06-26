@@ -1,4 +1,4 @@
-import { useState, version } from "react";
+import { useState } from "react";
 
 
 //Components
@@ -38,21 +38,21 @@ export default function Output({ editorRef, language, problemName }){
                 Run Code
               </button>
             </div>
-              <div class="container">
-                <div onClick={() => setTestCase(1)} class="item">Test 1</div>
-                <div onClick={() => setTestCase(2)} class="item">Test 2</div>
-                <div onClick={() => setTestCase(3)} class="item">Test 3</div>
+              <div class="test-case-container">
+                <div onClick={() => setTestCase(1)} class="test-case-button">Test 1</div>
+                <div onClick={() => setTestCase(2)} class="test-case-button">Test 2</div>
+                <div onClick={() => setTestCase(3)} class="test-case-button">Test 3</div>
               </div>
 
 
-              Input:
+              <div className="box-headder">Input:</div>
               <InputOutput text={test_cases[problemName].input[testCase]}/>
 
 
-              Expected Output:
+              <div className="box-headder">Expected Output:</div>
               <InputOutput text={test_cases[problemName].expected_output[testCase]}/>
 
-              Actual Output:
+              <div className="box-headder">Actual Output:</div>
               <InputOutput text={output[testCase-1]} />
 
             </div>

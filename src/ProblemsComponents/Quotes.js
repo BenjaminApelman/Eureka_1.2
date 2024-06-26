@@ -8,13 +8,13 @@ export const quotes = {
     },
 
     2: {
-        quote: "Every person takes the limits of their own field of vision for the limits of the world.", 
-        author: "Arthur Schopenhauer"
+        quote: "The mind is not a vessel to be filled but a fire to be kindled.", 
+        author: "Plutarch"
     },
 
     3: {
-        quote: "The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.",
-        author: "Friedrich Nietzsche"
+        quote: "The more you learn, the more you earn.",
+        author: "Warren Buffett"
 
     },
 
@@ -39,13 +39,13 @@ export const quotes = {
     }, 
 
     8: {
-        quote: "An idiot admires complexity, a genius admires simplicity.",
-        author: "Terry Davis"
+        quote: "The roots of education are bitter, but the fruit is sweet.",
+        author: "Aristotle"
     },
 
     9: {
-        quote: "Truth is ever to be found in the simplicity, and not in the multiplicity and confusion of things.",
-        author: "Issac Newton"
+        quote: "An investment in knowledge pays the best interest.",
+        author: "Benjamin Franklin"
     },
 
     10: {

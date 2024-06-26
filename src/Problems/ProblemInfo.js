@@ -8,10 +8,10 @@ export const problem_info = [
         solved: "-"
     },
     {
-        problem_name: "Find RMSE",
+        problem_name: "Simple Linear Regression",
         discipline: "Data Science",
         language: "Python",
-        difficulty: "Easy",
+        difficulty: "Medium",
         solved: "-"
     },
     {
@@ -29,13 +29,7 @@ export const problem_info = [
         difficulty: "Medium",
         solved: "-"
     },
-    {
-        problem_name: "Dinning Philosophers",
-        discipline: "Operating Systems",
-        language: "C",
-        difficulty: "Medium",
-        solved: "-"
-    },
+  
     {
         problem_name: "Riemann Approximation of an Integral",
         discipline: "Numerical Computation",

@@ -1,4 +1,3 @@
-import './CSS/InputOutput.css'
 
 export default function InputOutput({text}){
     return(
