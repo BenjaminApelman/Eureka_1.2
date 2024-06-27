@@ -39,7 +39,7 @@ export const problem_description_and_code = {
 
     "Build a Vector": {
         startingCode: "#include <stdexcept>\n\ntemplate <typename Type>\nclass Vector {\n    private:\n        Type* data;\n        size_t size;\n        size_t capacity;\n\n    public:\n        Vector() : data(nullptr), size(0), capacity(0) {}\n\n        void push_back(const Type& value) {\n            //TODO\n        }\n\n        Type pop_back() {\n            //TODO\n        }\n\n        int get_capacity() {\n            //TODO\n        }\n\n        int get_size() {\n            //TODO\n        }\n};",
-        description: "Build a vector, bro",
+        description: "You are given a incomplete template of a vector class: 'data' should store the actual contents of the vector, 'size' should be the actuall number of elements in the vector, 'capacity' should be the the size of the vector including unallocated spaces. Initially both size and capacity are initialized to 0, your vecotor should dynmically double in capacity as needed, or go from 0 to 1 if empty.",
         language: "cpp"
     },
 

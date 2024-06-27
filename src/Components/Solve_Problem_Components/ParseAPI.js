@@ -2,7 +2,6 @@
 
 export const ParseAPI = (API_CALL) =>{
 
-    console.log("in parseAPI")
     if(API_CALL.stderr !== '' ){
         return[API_CALL.stderr,API_CALL.stderr,API_CALL.stderr]
     }
@@ -12,7 +11,7 @@ export const ParseAPI = (API_CALL) =>{
         
     
         let STD_OUT = API_CALL.stdout;
-        console.log("STD_OUT", STD_OUT)
+        //console.log("STD_OUT", STD_OUT)
 
         //Using result777: as a special identifier to grab the acutal output incase the user prints something
         // Use regex to extract the array content this avoid problems caused by user prints
@@ -32,11 +31,11 @@ export const ParseAPI = (API_CALL) =>{
             only_arr = only_arr.replace(/'/g, '"');
 
 
-            console.log("only_arr", only_arr)
+            //console.log("only_arr", only_arr)
             // Convert string to array  
             let output_arr = JSON.parse(only_arr);
-            console.log("output_arr", output_arr)
-            console.log("out",output_arr)
+            // console.log("output_arr", output_arr)
+            // console.log("out",output_arr)
 
 
 
@@ -49,7 +48,8 @@ export const ParseAPI = (API_CALL) =>{
 
         }
         catch{
-            return["Unhandled Errorxxx","Unhandlexxxd Error","Unhandlxxxed Error"]
+            console.log(API_CALL)
+            return["Cannot interpret output","Cannot interpret output","Cannot interpret output"]
         }
     }
 }

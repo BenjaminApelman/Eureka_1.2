@@ -19,9 +19,9 @@ export const executeCode = async (language, sourceCode) => {
     const version = LANGUAGE_VERSIONS[language]
 
 
-    console.log("language>",language);
-    console.log("version>", version);
-    console.log("content>", sourceCode);
+    // console.log("language>",language);
+    // console.log("version>", version);
+    // console.log("content>", sourceCode);
     
     const response = await API.post("/execute", {
         language: language,

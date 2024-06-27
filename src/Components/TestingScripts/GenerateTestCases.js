@@ -9,7 +9,7 @@ export const GenerateTestCases = (language, user_code, problemName) =>{
 
 
     //&& test_cases[problemName].input_type === '1d'
-    if (language === 'python' && test_cases[problemName].input_type === '1d') {
+    if (language === 'python' && test_cases[problemName].input_type === 'py1d') {
         user_code += `${templates[language].init}\n`;
         user_code += 'def run_test_case():\n';
         user_code += '    test_cases = [\n';
@@ -29,7 +29,7 @@ export const GenerateTestCases = (language, user_code, problemName) =>{
 
 
     
-    else if(language === 'python' && test_cases[problemName].input_type === '2d'){
+    else if(language === 'python' && test_cases[problemName].input_type === 'py2d'){
         user_code += `${templates[language].init}\n`;
         user_code += 'def run_test_case():\n';
         user_code += '    test_cases = [\n';
@@ -48,7 +48,7 @@ export const GenerateTestCases = (language, user_code, problemName) =>{
 
     }
 
-    else if (test_cases[problemName].input_type === "custom_class"){
+    else if (test_cases[problemName].input_type === "cpp_custom_class"){
         user_code += test_cases[problemName].test_code
         return user_code
     }

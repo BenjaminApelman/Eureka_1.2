@@ -8,7 +8,8 @@ export const test_cases = {
             2: "[3,8,14,9,14,100,12]",
             3: "[10,20,30,40,50,60,70,80,90]"
         },
-        input_type: "1d",
+        input_type: "py1d",
+        output_type: "standard",
         expected_output: {
             1: 5.0,
             2: 22.857142857142858,
@@ -27,7 +28,8 @@ export const test_cases = {
             2: "[(1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]",
             3: "[(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 20)]"
         },
-        input_type: "1d",
+        input_type: "py1d",
+        output_type: "standard",
         expected_output: {
             1: 0.0,
             2: 1.6733200530681511,
@@ -43,7 +45,8 @@ export const test_cases = {
             2: "lambda x: -2**x + x**2 - 5",
             3: "lambda x: x**2 + 1"
         },
-        input_type: "1d",
+        input_type: "py1d",
+        output_type: "standard",
         expected_output: {
             1: 1,
             2: -2.282,
@@ -81,7 +84,8 @@ export const test_cases = {
             2: "lambda x: math.exp(x), (0, 10)",
             3: "lambda x: 1 / (1 + x**2), (-1,1)"
         },
-        input_type: "2d",
+        input_type: "py2d",
+        output_type: "standard",        
         expected_output: {
             1: 0,
             2: 22025.4657948,
@@ -106,7 +110,8 @@ export const test_cases = {
             2: "Vector<std::string> user_vector; user_vector.push_back(\"+\"); user_vector.push_back(\"+\"); user_vector.push_back(\"C\"); std::cout << user_vector.pop_back() << user_vector.pop_back() << user_vector.pop_back();",
             3: "struct person{std::string name;int age;};person Bill;Bill.age=42;Bill.name=\"Bill\";Vector<person> people;people.push_back(Bill);person guy=people.pop_back();std::cout<<guy.name<<guy.age;"
         },
-        input_type: "custom_class",
+        input_type: "cpp_custom_class",
+        output_type: "standard",
         expected_output: {
             1: 16,
             2: "C++",
