@@ -11,7 +11,6 @@ export default function Grader(problemName, output){
     if(is_correct.length !== output.length){
         throw new Error("array length unequal") 
     }
-
     //standard output
     if(test_cases[problemName].output_type === 'standard'){
         for(let i = 1; i <= output.length; i++){

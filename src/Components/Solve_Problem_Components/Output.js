@@ -28,11 +28,16 @@ export default function Output({ editorRef, language, problemName }){
       let user_code = editorRef.current.getValue();
       user_code = GenerateTestCases(language, user_code, problemName);
 
-
       const API_CALL =  await RunCode(language,user_code);
-      const parsed_API_call = ParseAPI(API_CALL);
-      setOutput(parsed_API_call);
-      setIsLoading(false)
+      if(API_CALL === -1){
+        setOutput("failed to run code");
+        setIsLoading(false);
+      }
+      else{
+        const parsed_API_call = ParseAPI(API_CALL);
+        setOutput(parsed_API_call);
+        setIsLoading(false)
+      }
     }
 
     useEffect(() =>{
@@ -78,14 +83,14 @@ export default function Output({ editorRef, language, problemName }){
 
 
               <div className="box-headder">Input:</div>
-              <InputOutput text={test_cases[problemName].input[testCase]}/>
+              <InputOutput text={test_cases[problemName].input[testCase]} language={language}/>
 
 
               <div className="box-headder">Expected Output:</div>
-              <InputOutput text={test_cases[problemName].expected_output[testCase]}/>
+              <InputOutput text={test_cases[problemName].expected_output[testCase]} language={language}/>
 
               <div className="box-headder">Actual Output:</div>
-              <InputOutput text={output[testCase-1]} />
+              <InputOutput text={output[testCase-1]} language={language}/>
 
             </div>
 

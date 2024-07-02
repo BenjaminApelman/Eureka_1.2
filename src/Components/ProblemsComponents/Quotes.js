@@ -13,8 +13,8 @@ export const quotes = {
     },
 
     3: {
-        quote: "The more you learn, the more you earn.",
-        author: "Warren Buffett"
+        quote: "Somewhere, something incredible is waiting to be known.",
+        author: "Carl Sagan"
 
     },
 

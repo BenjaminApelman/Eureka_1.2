@@ -99,16 +99,39 @@ export const test_cases = {
 
     "Build a Vector": {
         input: {
-            1: `Vector<int> user_vector;  \\
-            for(int i = 0; i<10; i++){ 
-                user_vector.push_back(i); 
-            } 
-            size_t vector_size_bytes = user_vector.get_size(); 
-            std::cout << vector_size_bytes << std::endl; 
-            size_t vector_capacity = user_vector.get_capacity(); 
-            std::cout << vector_capacity << std::endl;`,
-            2: "Vector<std::string> user_vector; user_vector.push_back(\"+\"); user_vector.push_back(\"+\"); user_vector.push_back(\"C\"); std::cout << user_vector.pop_back() << user_vector.pop_back() << user_vector.pop_back();",
-            3: "struct person{std::string name;int age;};person Bill;Bill.age=42;Bill.name=\"Bill\";Vector<person> people;people.push_back(Bill);person guy=people.pop_back();std::cout<<guy.name<<guy.age;"
+            1: 
+`Vector<int> user_vector;  
+
+for(int i = 0; i<10; i++){ 
+    user_vector.push_back(i); 
+} 
+
+size_t vector_capacity = user_vector.get_capacity(); 
+std::cout << vector_capacity << std::endl;`,
+
+            2: 
+`Vector<std::string> user_vector; 
+
+user_vector.push_back(\"+\"); 
+user_vector.push_back(\"+\"); 
+user_vector.push_back(\"C\"); 
+
+std::cout << user_vector.pop_back() << user_vector.pop_back() << user_vector.pop_back();`,
+           
+            3: 
+`struct person{
+    std::string name;
+    int age;
+};
+
+person Bill;
+Bill.age = 42;
+Bill.name = \"Bill\";
+Vector<person> people;
+people.push_back(Bill);
+person guy = people.pop_back();
+
+std::cout<<guy.name<<guy.age;`
         },
         input_type: "cpp_custom_class",
         output_type: "standard",

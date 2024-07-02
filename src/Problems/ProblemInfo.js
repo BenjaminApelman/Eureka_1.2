@@ -22,13 +22,13 @@ export const problem_info = [
         solved: "-"
     },
 
-    {
-        problem_name: "Producer-Consumer",
-        discipline: "Operating Systems",
-        language: "C",
-        difficulty: "Medium",
-        solved: "-"
-    },
+    // {
+    //     problem_name: "Producer-Consumer",
+    //     discipline: "Operating Systems",
+    //     language: "C",
+    //     difficulty: "Medium",
+    //     solved: "-"
+    // },
   
     {
         problem_name: "Riemann Approximation of an Integral",

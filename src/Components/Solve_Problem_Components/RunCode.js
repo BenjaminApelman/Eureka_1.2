@@ -6,6 +6,6 @@ export const RunCode = async(language, user_code) => {
       return result
     } 
     catch (error) {
-      console.log(error)
+      return -1;
     }
   }

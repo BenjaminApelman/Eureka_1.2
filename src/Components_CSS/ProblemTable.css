@@ -3,7 +3,6 @@
     width: 80%; /* Set table container width to 80% */
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center align children (table) horizontally */
-    padding-top: 10%;
 }
 
 .table {

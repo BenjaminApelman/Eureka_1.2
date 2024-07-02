@@ -1,6 +1,5 @@
 
 import { useRef, useState } from "react";
-import { flexbox } from "@chakra-ui/react";
 import { Editor } from "@monaco-editor/react";
 import Split from 'react-split'
 
