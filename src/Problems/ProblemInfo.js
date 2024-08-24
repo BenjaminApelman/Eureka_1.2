@@ -1,3 +1,4 @@
+import language from "react-syntax-highlighter/dist/esm/languages/hljs/1c";
 
 export const problem_info = [
     {
@@ -21,15 +22,6 @@ export const problem_info = [
         difficulty: "Medium",
         solved: "-"
     },
-
-    // {
-    //     problem_name: "Producer-Consumer",
-    //     discipline: "Operating Systems",
-    //     language: "C",
-    //     difficulty: "Medium",
-    //     solved: "-"
-    // },
-  
     {
         problem_name: "Riemann Approximation of an Integral",
         discipline: "Numerical Computation",
@@ -44,7 +36,42 @@ export const problem_info = [
         difficulty: "Easy",
         solved: "-"
     },
-    
-    
+    {
+        problem_name: "Take Derivative",
+        discipline: "Numerical Computation",
+        language: "Python",
+        difficulty: "Easy",
+        solved: "-"
+    },
+    {
+        problem_name: "Build Binary Search Tree",
+        discipline: "Data Structures",
+        language: "C++",
+        difficulty: "Medium",
+        solved: "-"
+    },
+    {
+        problem_name: "Build an AVL Tree",
+        discipline: "Data Structures",
+        language: "C++",
+        difficulty: "Hard",
+        solved: "-"
+
+    },
+    {
+        problem_name: "Find Evens",
+        discipline: "Numpy",
+        language: "Python",
+        difficulty: "Trivial",
+        solved: "-"
+    },
+    {
+        problem_name: "Give Raises",
+        discipline: "Pandas",
+        language: "Python",
+        difficulty: "Easy",
+        solved: "-"
+    },
+   
    
 ];

@@ -7,7 +7,6 @@ import React, { useState } from 'react';
 import '../Components_CSS/ProblemTable.css';
 
 //JSON 
-import { problem_info } from '../Problems/ProblemInfo';
 import { Link } from 'react-router-dom';
 
 
@@ -23,6 +22,9 @@ function ProblemTable({problems}) {
     else if (difficulty === 'Trivial') {
       return '#FC95FF ';
     } 
+    else if(difficulty === "Hard"){
+      return "#FF1147"
+    }
     else {
       return 'white'; // Default or handle other cases
     }
@@ -62,7 +64,7 @@ function ProblemTable({problems}) {
 
                     <td> {problem.discipline} </td>
                     <td> {problem.language} </td>
-                    <td style={{ color: getDifficultyColor(problem.difficulty) }}>{problem.difficulty}</td>
+                    <td style={{color: getDifficultyColor(problem.difficulty)}} >{problem.difficulty}</td>
                     <td> {problem.solved} </td>
                     
                 </tr>)}

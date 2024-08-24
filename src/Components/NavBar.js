@@ -11,6 +11,7 @@ function Navbar() {
         </li>
       </ul>
     </nav>
+    
   );
 }
 

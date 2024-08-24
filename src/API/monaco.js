@@ -7,8 +7,6 @@ const API = axios.create({
 export const executeCode = async (language, sourceCode) => {
 
 
-
-
     //May want to add an endpoint to dynmically update these
     const LANGUAGE_VERSIONS = {
         "python": "3.10.0",
@@ -18,10 +16,9 @@ export const executeCode = async (language, sourceCode) => {
         
     const version = LANGUAGE_VERSIONS[language]
 
-
     // console.log("language>",language);
     // console.log("version>", version);
-    // console.log("content>", sourceCode);
+    // console.log(sourceCode);
     
     const response = await API.post("/execute", {
         language: language,

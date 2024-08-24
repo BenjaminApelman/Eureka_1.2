@@ -4,9 +4,9 @@ import { useState, useEffect } from "react";
 //Components
 import InputOutput from "./InputOutput";
 import { RunCode } from "./RunCode";
-import { ParseAPI } from "./ParseAPI"
+import {ParseAPI} from "../TestingScripts/ParseAPI"
 import { GenerateTestCases } from "../TestingScripts/GenerateTestCases";
-import Grader from "./Grader";
+import Grader from "../TestingScripts/Grader";
 //CSS
 import "./CSS/Output.css"
 //JSON
@@ -28,23 +28,25 @@ export default function Output({ editorRef, language, problemName }){
       let user_code = editorRef.current.getValue();
       user_code = GenerateTestCases(language, user_code, problemName);
 
+
       const API_CALL =  await RunCode(language,user_code);
+
       if(API_CALL === -1){
         setOutput("failed to run code");
         setIsLoading(false);
       }
       else{
-        const parsed_API_call = ParseAPI(API_CALL);
+        const parsed_API_call = ParseAPI(API_CALL, problemName);
         setOutput(parsed_API_call);
         setIsLoading(false)
       }
+
     }
 
     useEffect(() =>{
       if (output.length > 0){
         const result = Grader(problemName, output);
         setIsCorrect(result)
-        console.log(isCorrect)
       }
     }, [output])
 
@@ -67,6 +69,7 @@ export default function Output({ editorRef, language, problemName }){
 
 
             </div>
+            
               <div class="test-case-container">
                 <div onClick={() => setTestCase(1)} className={`test-case-button ${isCorrect[0] ? 'test-case-button-correct' : ''}`}>Test 1</div>
                 <div onClick={() => setTestCase(2)} className={`test-case-button ${isCorrect[1] ? 'test-case-button-correct' : ''}`}>Test 2</div>

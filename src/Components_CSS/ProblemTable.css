@@ -34,7 +34,7 @@
 }   
 
 .table tbody tr:nth-child(odd) {
-    background-color: #717171; /* Default background color for odd rows */
+    background-color: #807f7ff9; /* Default background color for odd rows */
 }
 
 

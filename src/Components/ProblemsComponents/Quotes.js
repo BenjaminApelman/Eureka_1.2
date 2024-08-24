@@ -56,10 +56,13 @@ export const quotes = {
     11: {
         quote: "Education does not just happen in college, but it also happens in developing skills which will enable people to contribute to our society as a whole.",
         author: "Peter Thiel"
+    },
+    12: {
+        quote: "The brain is like a muscle, the more you use it, the more it grows.",
+        author: "Sal Khan"
     }
-
 }
 
 
 
-export const NUMBER_OF_QUOTES = 11
+export const NUMBER_OF_QUOTES = 12
